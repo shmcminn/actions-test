@@ -10,7 +10,7 @@ on:
 jobs:
   # Set the job key. The key is displayed as the job name
   # when a job name is not provided
-  super-lint:
+  get-file-parent:
     # Name the Job
     name: get file
     # Set the type of machine to run on
