@@ -2,9 +2,10 @@ name: Super-Linter
 
 # Run this workflow every time a new commit pushed to your repository
 on:
-  schedule:
-    - cron:  '21 * * * *'
+  push:
   workflow_dispatch:
+  schedule:
+    - cron:  '7,27,47 * * * *'
 
 jobs:
   # Set the job key. The key is displayed as the job name
