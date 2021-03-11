@@ -3,7 +3,7 @@ name: Super-Linter
 # Run this workflow every time a new commit pushed to your repository
 on:
   schedule:
-    - cron:  '* * * * *'
+    - cron:  '0/2 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -22,10 +22,10 @@ jobs:
           curl https://www.fema.gov/api/open/v1/PublicAssistanceApplicants | jq . > output.json
           - name: Commit and push if it changed
       - name: commit and push if changed 
-      run: |-
-        git config user.name "Automated"
-        git config user.email "actions@users.noreply.github.com"
-        git add -A
-        timestamp=$(date -u)
-        git commit -m "Latest data: ${timestamp}" || exit 0
-        git push
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+          git push
