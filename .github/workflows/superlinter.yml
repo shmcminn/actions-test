@@ -4,7 +4,7 @@ name: Super-Linter
 on:
   schedule:
     # every day at 11:30 pm UTC/4:45 PM in Albuquerque, NM
-    - cron:  '0/5 * * * *'
+    - cron:  '0/2 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
       - name: get file 
         run: |
           curl https://www.fema.gov/api/open/v1/PublicAssistanceApplicants > output.json
-          
+
 
       # # Runs the Super-Linter action
       # - name: Run Super-Linter
