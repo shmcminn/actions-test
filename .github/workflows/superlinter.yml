@@ -16,6 +16,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      # Checks-out your repository under $GITHUB_WORKSPACE
+      # so your job can access it
+      - uses: actions/checkout@main
+
+
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: get file 
         run: |-
@@ -25,6 +31,5 @@ jobs:
           git config --global user.email "seanpm92@gmail.com"
           git config --global user.name "shmcminn"
           git add .
-          timestamp=$(date -u)
-          git commit -m "Latest data: ${timestamp}" || exit 0
+          git commit -m "Latest data: new" || exit 0
           git push
