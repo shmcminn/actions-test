@@ -19,8 +19,8 @@ jobs:
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: get file 
-        run: |
-          curl https://www.fema.gov/api/open/v1/PublicAssistanceApplicants > output.json
+        run: |-
+          curl https://www.fema.gov/api/open/v1/PublicAssistanceApplicants | jq . > output.json
 
 
       # # Runs the Super-Linter action
