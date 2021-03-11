@@ -22,9 +22,9 @@ jobs:
           curl https://www.fema.gov/api/open/v1/PublicAssistanceApplicants | jq . > output.json
       - name: commit
         run: |-
-          git config user.name "Automated"
-          git config user.email "actions@users.noreply.github.com"
-          git add -A
+          git config --global user.email "seanpm92@gmail.com"
+          git config --global user.name "shmcminn"
+          git add .
           timestamp=$(date -u)
           git commit -m "Latest data: ${timestamp}" || exit 0
           git push
