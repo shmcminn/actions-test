@@ -11,7 +11,7 @@
     "entityname": "PublicAssistanceApplicants",
     "version": "v1",
     "url": "/api/open/v1/PublicAssistanceApplicants",
-    "rundate": "2021-03-18T07:29:27.527Z",
+    "rundate": "2021-03-19T07:25:05.048Z",
     "DeprecationInformation": {
       "depDate": null,
       "deprecatedComment": "Adding language to FEMA Library data so that it points to API instead.",
