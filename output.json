@@ -11,13 +11,7 @@
     "entityname": "PublicAssistanceApplicants",
     "version": "v1",
     "url": "/api/open/v1/PublicAssistanceApplicants",
-    "rundate": "2021-09-15T07:21:15.928Z",
-    "DeprecationInformation": {
-      "depDate": null,
-      "depApiMessage": "",
-      "depNewURL": "",
-      "depWebMessage": ""
-    }
+    "rundate": "2021-09-16T07:21:29.884Z"
   },
   "PublicAssistanceApplicants": [
     {
