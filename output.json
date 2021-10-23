@@ -6,12 +6,11 @@
     "filter": "",
     "format": "json",
     "metadata": true,
-    "orderby": {},
     "select": null,
     "entityname": "PublicAssistanceApplicants",
     "version": "v1",
     "url": "/api/open/v1/PublicAssistanceApplicants",
-    "rundate": "2021-10-22T07:21:47.855Z"
+    "rundate": "2021-10-23T07:20:57.996Z"
   },
   "PublicAssistanceApplicants": [
     {
